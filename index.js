@@ -50,7 +50,7 @@
 
     var body = document.getElementsByTagName("body")[0];
     var image = document.createElement("img");
-    image.src = "//some.com/img_not_exist.jpg";
+    image.src = window.location.origin + '/not_exisit/' + Math.random() + '.png';
     body.appendChild(image);
     image.onerror = function () {
       if (image.width === 0 && image.height === 0) {
@@ -61,7 +61,7 @@
       }
       body.removeChild(image);
 
-      callback(!!reason.length, evidences)
+      callback(!!evidences.length, evidences)
     };
   };
 });

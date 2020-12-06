@@ -1,6 +1,6 @@
 {
   "name": "r_u_headless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Help to detect whether your website user is headless browser",
   "main": "index.js",
   "scripts": {
